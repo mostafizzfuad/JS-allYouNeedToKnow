@@ -101,7 +101,7 @@ while (true) {
     if (str.charAt(strLength) == '') {
         break
     } else {
-        strLength++;
+        strLength++
     }
 }
 console.log(strLength)
