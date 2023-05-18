@@ -41,3 +41,24 @@ for (var i = 0; i < arr.length; i++) {
         console.log(arr[i])
     }
 }
+
+// insert elements
+var  arr = [1, 2, 3, 4, 5, 6, 7, 8]
+// arr.push(9) // last e insert hbe
+// arr.unshift(9) // first e insert hbe
+// arr.splice(3, 0, 9) // arr.splice(indexNo, removeElement, insertElement)
+arr.splice(3, 0, 9, 10)
+console.log(arr)
+
+
+// remove elements
+var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+// arr.pop() // remove last element
+// arr.shift() // remove first element
+arr.splice(3, 1) // splice(indexNo, deleteCount)
+console.log(arr)
+
+// remove & replace elements
+var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+arr.splice(3, 1, 44) // splice(indexNo, deleteCount, replaceValue)
+console.log(arr)
