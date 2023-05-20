@@ -62,3 +62,22 @@ console.log(arr)
 var arr = [1, 2, 3, 4, 5, 6, 7, 8]
 arr.splice(3, 1, 44) // splice(indexNo, deleteCount, replaceValue)
 console.log(arr)
+
+
+
+
+// search data
+var arr = [4, 7, 2, 6, 8, 4, 55, 9, 89, 27];
+var find = 6
+var isFound = false
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] == find) {
+        console.log('data found at index ' + i)
+        isFound = true
+        break
+    }
+}
+
+if (!isFound) {
+    console.log('data not found')
+}
