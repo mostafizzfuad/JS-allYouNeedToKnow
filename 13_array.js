@@ -81,3 +81,35 @@ for (var i = 0; i < arr.length; i++) {
 if (!isFound) {
     console.log('data not found')
 }
+
+
+
+// multi dimensional array
+var arr = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+];
+console.log(arr[0][0])
+console.log(arr[2][1])
+
+for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+        console.log(arr[i][j])
+    }
+}
+
+
+// reverse an array using logic
+var arr = [5, 6, 7, 8, 9]
+
+for (var i = 0; i < (arr.length / 2); i++) {
+    var temp = arr[i]
+    arr[i] = arr[arr.length - 1 - i]
+    arr[arr.length - 1 - i] = temp
+}
+console.log(arr)
+
+// built-in functions reverse an array : arr.reverse()
+var arr3 = [1, 2, 3, 4, 5, 6]
+console.log(arr3.reverse())
