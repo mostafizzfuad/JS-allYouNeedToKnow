@@ -113,3 +113,37 @@ console.log(arr)
 // built-in functions reverse an array : arr.reverse()
 var arr3 = [1, 2, 3, 4, 5, 6]
 console.log(arr3.reverse())
+
+
+
+// built-in method 
+var arr = [4, 5, 6, 7, 8]
+
+console.log(arr.join(' ')) // join method
+console.log(arr.join(' | ')) // join method
+
+console.log(arr.fill(0)) // fill method
+
+var arr = [4, 5, 6, 7, 8]
+var arr2 = [1, 2, 3, 9]
+
+var arr3 = arr.concat(arr2)
+console.log(arr3) // concat method
+
+console.log(Array.isArray(arr)) //Array.isArray()
+
+
+// clone the array problem if a assign to b
+var a = [1, 2, 3]
+var b = a 
+
+b[2] = 5 // if b[index] change, also change a[index]
+console.log(a)
+
+// clone the Array.form()
+var arr = [1, 2, 3]
+var brr = Array.from(arr)
+
+brr[0] = 4
+console.log(arr)
+console.log(brr)
