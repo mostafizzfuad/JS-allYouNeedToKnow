@@ -18,11 +18,17 @@
 // =! check only values. type doesn't matter
 // ==! type and values both are check
 
-// ~ binary not
-// ^ binary xor
+// | binary OR
+// & binary AND
+// ~ binary NOT
+// ^ binary XOR
 // << left shift
 // >> right shift
 
+
+// typeof operator
+console.log(typeof 10)
+console.log(typeof '10')
 
 
 

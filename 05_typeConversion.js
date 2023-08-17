@@ -10,7 +10,7 @@ console.log(Number.parseInt(str)) // convert string to number
 console.log(Number.parseFloat(str)) // convert string to number
 
 str = Number(str) // convert string to number
-console.log(typeof(str))
+console.log(typeof str)
 console.log(str + num) // sum to number
 
 
@@ -19,7 +19,7 @@ console.log(str + num) // sum to number
 /************ number to string **********/
 var num = 250
 num = num.toString() // convert number to string
-console.log(typeof(num)) 
+console.log(typeof num) 
 
 
 console.log(Number(Infinity))
@@ -46,3 +46,20 @@ console.log(Boolean(undefined)) // false
 console.log(Boolean(NaN)) // false
 
 console.log(Boolean(247)) // true
+console.log(Boolean(-0)) // false
+
+
+
+
+/************ boolean to string **********/
+var x = true
+console.log(typeof x) // boolean
+console.log(typeof x.toString()) // string
+
+
+
+/***** constructor ******
+ * Number()
+ * String()
+ * Boolean()
+ ************************/ 

@@ -1,4 +1,5 @@
 // variable : variable is a container which can Store Data.
+// for variableName : we're use camelCase
 
 var myName = "Mostafizur Rahman Fuad"
 var myAge = 25
