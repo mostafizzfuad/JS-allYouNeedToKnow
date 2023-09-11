@@ -1,4 +1,4 @@
-
+ 
 /************ operators **********
  
  * Arithmetic (+ - * / % ++ --)
@@ -49,6 +49,17 @@ if (num1 > num2 && num1 > num3) {
 }
 
 
+// example: check a letter vowel or consonant (logical or)
+var letter = 'B'
+letter = letter.toLowerCase();
+
+if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+    console.log('vowel')
+} else {
+    console.log('consonant')
+}
+
+
 
 // example of logical not
 var a = 10
@@ -62,11 +73,16 @@ console.log(check)
 
 
 /************ ternary operators **********/
-// example: find large between two numbers
-var a = 100;
-var b = 200;
+// example 1: find large between two numbers
+var a = 100
+var b = 200
 var c = (a > b) ? a : b
 console.log(c) 
+
+// example 2: find even or odd
+var number = 25
+var result = (number % 2 == 0) ? 'even' : 'odd'
+console.log(result)
 
 
 
@@ -86,7 +102,7 @@ if (shortName.length === 0) {
 }
 
 // example: 1 (shorthand)
-var shortName = '' // if shortName is null, then print Mostafizur Rahman Fuad
+var shortName = '' // if shortName is null, it returns falsy value. that's why fullName prints Mostafizur Rahman Fuad
 var fullName = shortName || 'Mostafizur Rahman Fuad'
 console.log(fullName)
 
@@ -100,13 +116,13 @@ if (isMorning) {
 }
 // example: 2 (shorthand)
 var isMorning = true
-isMorning && console.log('Please give me a cup of coffee')
+isMorning && console.log('Please give me a cup of coffee') // when isMorning is true, then this statement execute console log operation
 
 
 
 
 // example: 3 (and or combination shorthand)
 var savings = 200000
-var job = false
+var job = true
 var gettingMarriage = savings >= 500000 || job 
 gettingMarriage && console.log("Ok!! We'are looking for a pretty bride for you")

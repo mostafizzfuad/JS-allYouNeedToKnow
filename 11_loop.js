@@ -12,7 +12,12 @@
 
 
 
+
 /************ for loops *************/
+// write a program thats prints your name 10 times
+for (var i = 0; i < 10; i++) {
+    console.log('Mostafizur Rahman Fuad')
+}
 
 // write a program thats print 1-100
 for (var i = 1; i <= 100; i++) {
@@ -24,10 +29,28 @@ for (var i = 1; i <= 100; i+=2) {
     console.log(i)
 }
 
+// write a program thats sum 1-10 numbers
+var sum = 0
+for (var i = 1; i <= 10; i++) {
+    sum += i
+} 
+console.log(sum) // 55
+
+// write a program thats sum 1-10 even numbers
+var sum = 0
+for (var i = 1; i <= 10; i++) {
+    if (i % 2 == 0) {
+        sum += i
+    }
+} 
+console.log(sum) // 30
+
+
+
 
 /************ while loops *************/
 // write a program thats print 1-100 even numbers
-var i = 2;
+var i = 2
 while (i <= 100) {
     console.log(i)
     i+=2
@@ -39,7 +62,7 @@ while (i <= 100) {
 var isRunning = true
 
 while (isRunning) {
-    var rand = Math.floor(Math.random() * 10 + 1)
+    var rand = Math.floor(Math.random() * 10 + 1) // 1-10
     if (rand == 9) {
         console.log('Winner Winner Chicken Dinner')
         break; // isRunning = false
@@ -73,11 +96,11 @@ do {
 // 1 2 3 4
 // 1 2 3 4 5
 
-var row = 5
-for (var i = 1; i <= row; i++) {
+var numberOfRows = 5
+for (var row = 1; row <= numberOfRows; row++) {
     var result = ''
-    for (var j = 1; j <= i; j++) {
-        result += j + ' '
+    for (var col = 1; col <= row; col++) {
+        result += col + ' '
     }
     console.log(result)
 }
@@ -90,10 +113,10 @@ for (var i = 1; i <= row; i++) {
 // * * * * *
 // * * * * *
 
-var row = 5
-for (var i = 1; i <= row; i++) {
+var numberOfRows = 5
+for (var row = 1; row <= numberOfRows; row++) {
     var result = ''
-    for (var j = 1; j <= row; j++) {
+    for (var col = 1; col <= numberOfRows; col++) {
         result += '* '
     }
     console.log(result)
@@ -133,4 +156,9 @@ for (var i = 1; i < 10; i++) {
 /************ infinity loop *************/
 for (var i = 1; i < 10; i--) {
     console.log(i)
+}
+
+// infinite for loop structure
+for (; ;) {
+
 }

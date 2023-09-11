@@ -16,8 +16,8 @@ console.log(Math.sqrt(49))
 console.log(Math.random()) // 0 to 1
 console.log(Math.random() * 6) // 0 to 6
 console.log(Math.floor(Math.random() * 6)) // 0 to 5
-console.log(Math.floor(Math.random() * 5) + 1) // 1 to 5
 console.log(Math.floor(Math.random() * 6) + 1) // 1 to 6
+console.log(Math.floor(Math.random() * 5) + 1) // 1 to 5
 console.log(Math.floor(Math.random() * 11) + 10) // 10 to 20
 
 
