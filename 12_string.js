@@ -37,16 +37,18 @@ console.log(myName)
 
 
 /************ String Comparison *************/
-// Javascript uses Laxigraphic system to compare to string 
-// Laxical order : z, y, x ... a, Z, Y, X, ... B, A
+// Javascript uses Laxigraphic system to compare to string ... 
+// Laxical order : z, y, x ... a, Z, Y, X, ... B, A [ large to small ]
+// A = 65 ... Z = 90 ... a = 97 ... z = 122 (ascii value)
 
-console.log('z' > 'a')
+
+console.log('z' > 'a') 
 console.log('B' > 'b')
 
 console.log('aaaaZ' > 'aaaaz')
 console.log('aaZaz' > 'aaXaz')
 
-console.log('001' == 1) 
+console.log('001' == 1) // true .. because string comparison er somoi string nijei number e convert hoye nijeke number er sathe compare kore.. 
 
 
 
@@ -60,11 +62,11 @@ var c = a.concat(b)
 console.log(c) // c = I am MR Fuad
 
 // sub string 
-var d = c.substring(5)
+var d = c.substring(5) // MR Fuad : index 5 to last
 console.log(d)
 
 // sub string 
-var d = c.substring(5,7) // 7-5 = 2 
+var d = c.substring(5,7) // MR : 7-5 = 2 (kotoThekeStart, kotoIndexErAgPorjonto) 
 console.log(d) 
 
 // charAt() - returns the character at a specified index (position) in a string. 
@@ -108,3 +110,8 @@ console.log(strLength)
 
 // calculate the length using builtin methods
 console.log(str.length)
+console.log('mostafizur rahman fuad'.length)
+
+// note : charAt() method er maddhome jokhn amra kono akta unwanted index print kori tkhn amra akta empty string pabo..
+
+// First you should know the difference between empty string and a white space. The length of a white ' ' space is 1 . An empty string '' will have a length zero.
