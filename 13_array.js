@@ -1,11 +1,17 @@
 // array : array is a data structure where we can organize multiple data under a single variable
 
-var arr = [1, 5, 8, 7, 2, 3] // array literal
+var arr = [1, 5, 8, 7, 3] // array literal
 console.log(arr)
-console.log(arr[3])
 console.log(arr[0])
+console.log(arr[3])
 console.log(arr.length) // length of array
+console.log(arr[arr.length - 1]) // last element of array
 
+arr[2] = 80 // re-assign
+arr[5] = 9 // assign new element
+console.log(arr)
+
+console.log(arr[6]) // undefined -> because index 6 doesn't exist
 
 var arr2 = Array(5, 6, 8, 2, 7, 1) // array constructor
 console.log(arr2)
@@ -42,25 +48,37 @@ for (var i = 0; i < arr.length; i++) {
     }
 }
 
+// sum of all odd number from array elements
+var sum = 0
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 1) {
+        sum += arr[i]
+    } 
+}
+console.log(sum)
+
+
+
 // insert elements
 var  arr = [1, 2, 3, 4, 5, 6, 7, 8]
 // arr.push(9) // last e insert hbe
 // arr.unshift(9) // first e insert hbe
-// arr.splice(3, 0, 9) // arr.splice(indexNo, removeElement, insertElement)
-arr.splice(3, 0, 9, 10)
+// arr.splice(3, 0, 9) // arr.splice(indexNo, deleteCount, insertElement...)
+arr.splice(3, 0, 9, 10) 
 console.log(arr)
+
+
 
 
 // remove elements
 var arr = [1, 2, 3, 4, 5, 6, 7, 8]
 // arr.pop() // remove last element
 // arr.shift() // remove first element
+
 arr.splice(3, 1) // splice(indexNo, deleteCount)
 console.log(arr)
 
-// remove & replace elements
-var arr = [1, 2, 3, 4, 5, 6, 7, 8]
-arr.splice(3, 1, 44) // splice(indexNo, deleteCount, replaceValue)
+arr.splice(3, 1, 44) // splice(indexNo, deleteCount, insertElement...)
 console.log(arr)
 
 
@@ -93,6 +111,7 @@ var arr = [
 console.log(arr[0][0])
 console.log(arr[2][1])
 
+// traverse multi-dimensional array
 for (var i = 0; i < arr.length; i++) {
     for (var j = 0; j < arr[i].length; j++) {
         console.log(arr[i][j])
@@ -114,15 +133,19 @@ console.log(arr)
 var arr3 = [1, 2, 3, 4, 5, 6]
 console.log(arr3.reverse())
 
-
+console.log()
 
 // built-in method 
 var arr = [4, 5, 6, 7, 8]
 
+console.log(arr)
 console.log(arr.join(' ')) // join method
+console.log(arr.join(', ')) // join method
 console.log(arr.join(' | ')) // join method
 
 console.log(arr.fill(0)) // fill method
+// console.log(arr.fill(true)) // fill method
+
 
 var arr = [4, 5, 6, 7, 8]
 var arr2 = [1, 2, 3, 9]
@@ -130,14 +153,15 @@ var arr2 = [1, 2, 3, 9]
 var arr3 = arr.concat(arr2)
 console.log(arr3) // concat method
 
-console.log(Array.isArray(arr)) //Array.isArray()
+// Array.isArray() : returns true if the array is an array, otherwise false
+console.log(Array.isArray(arr)) // true
 
 
 // clone the array problem if a assign to b
 var a = [1, 2, 3]
 var b = a 
 
-b[2] = 5 // if b[index] change, also change a[index]
+b[2] = 5 // if b[index] change, also change a[index].. because array is an immutable object.. ai jonno knoo object ke jodi amra reference hisebe rakhi, sekhane jodi change kori tahole sob jaigai change hoye jabe.. aro clear kore bolte gele, amra jodi akta array ke onno akta arrayr moddhe initialize kore diy, tahole array tar kono duplicate copy jai na.. oi array tar akta reference chole jai.. ai jonno kono jaigai change korle sob jaiga tei change hoye jai..
 console.log(a)
 
 // clone the Array.form()
