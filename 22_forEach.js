@@ -1,4 +1,7 @@
-// forEach() : ai function er kaj hocche 1 ta array ke first to last traverse kora.
+/************** forEach() **************
+ * ai function er kaj hocche 1 ta array ke first to last traverse kora.
+ * forEach() function main array ke change kore fele...
+ ***************************************/  
 
 // example : array traverse using functional programming : forEach()
 var arr = [1, 2, 3, 4, 5]

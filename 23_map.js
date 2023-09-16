@@ -1,0 +1,44 @@
+/************** map() **************
+ * ai function er kaj hocche 1 ta array ke first to last traverse kora.
+ * forEach() function main array ke unchange rekhe, main arrayr element ke niye new akta array generate kore (bivinno condition er upor base kore)
+ ***************************************/  
+
+var arr = [1, 2, 3, 4]
+
+// example : square in every single element in an array
+var sqrArr = arr.map(function(value) {
+    return value * value
+})
+
+console.log(arr)
+console.log(sqrArr)
+
+console.log()
+
+
+/************ implementation map() *************/
+function map(arr, cb) {
+    var newArr = []
+    for (var i = 0; i < arr.length; i++) {
+        // var temp = arr[i] * arr[i]
+        var temp = cb(arr[i], i, arr)
+        newArr.push(temp)
+    }
+    return newArr
+}
+// console.log(map(arr))
+
+// sqrt
+var sqrtArr = map(arr, function(value) {
+    return value * value
+})
+
+// qb
+var qbArr = map(arr, function(value) {
+    return value * value * value
+})
+
+console.log(arr)
+console.log(sqrtArr)
+console.log(qbArr)
+
