@@ -10,8 +10,8 @@ function add(a, b) {
 }
 
 function manipulate(a, b, func) {
-    var c = a + b
-    var d = a - b
+    var c = a + b // 7
+    var d = a - b // -1
 
     // function multiply() {
     //     var m = func(a, b)
@@ -19,12 +19,12 @@ function manipulate(a, b, func) {
     // }
     // return multiply
 
-    
-    return function() {
-        var m = func(a, b)
-        return c * d * m
+    // return functions from another function
+    return function() { // parameter pass kora lagbe na.. autometically tar parent theke data access nibe as a closure
+        var m = func(a, b) // 7
+        return c * d * m // 7 * -1 * 7 = -49
     }
 }
 
-var multiply = manipulate(3, 4, add)
+var multiply = manipulate(3, 4, add) // pass function as an arguments
 console.log(multiply())
