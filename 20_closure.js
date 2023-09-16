@@ -1,10 +1,10 @@
 // first look at closure
 
-// closure : jodi kono scope er vitore, bahirer kono scope theke data ashe setai closure
+// closure : arguments pass na kore, bahirer scope theke vitorer scope e data ashe, setai closure. 
 
 var b = 10
 
-// run in browser console
+// run in browser console (ctrl shift i)
 function a() {
     // console.log(b)  // closure (global scope to function scope)
     var x = 5
@@ -17,5 +17,4 @@ function a() {
 var abc = a()
 console.dir(abc)
 
-// arguments pass na kore,  bahirer scope theke vitorer scope e data ashe setai closure. 
-// example : a() function scope theke x er value tar child function scope er moddhe gece.
+// example : arguments pass na kore, a() function scope theke x er value, tar child function scope er moddhe gece as a closure hisebe.
