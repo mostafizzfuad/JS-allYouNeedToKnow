@@ -1,6 +1,6 @@
 /************** map() **************
  * ai function er kaj hocche 1 ta array ke first to last traverse kora.
- * forEach() function main array ke unchange rekhe, main arrayr element ke niye new akta array generate kore (bivinno condition er upor base kore)
+ * map() method main array ke unchange rekhe, main arrayr element ke niye new akta array generate kore (bivinno condition er upor base kore)
  ***************************************/  
 
 var arr = [1, 2, 3, 4]
