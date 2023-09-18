@@ -6,8 +6,8 @@
 var arr = [1, 2, 3, 4]
 
 // example : square in every single element in an array
-var sqrArr = arr.map(function(value) {
-    return value * value
+var sqrArr = arr.map(function(value, index, arr) {
+    return value * value // result ta kei return kore dibe
 })
 
 console.log(arr)
@@ -38,7 +38,12 @@ var qbArr = map(arr, function(value) {
     return value * value * value
 })
 
+// each element multiply by 10
+var multiplyByTen = map(arr, function(value, i, arr) {
+    return value * 10
+})
+
 console.log(arr)
 console.log(sqrtArr)
 console.log(qbArr)
-
+console.log(multiplyByTen)

@@ -7,8 +7,9 @@
 var arr = [4, 8, 1, 3, 5, 6, 3, 2, 7]
 
 // filtered all even number
-var evenArr = arr.filter(function(value) {
-    return value % 2 == 0
+var evenArr = arr.filter(function(value, index, arr) {
+    return value % 2 == 0 // condition true hoile sei value/arrElement ta newArray te push kore dibe...
+    // return value > 4
 })
 console.log(arr)
 console.log(evenArr)
@@ -19,8 +20,9 @@ console.log(evenArr)
 function filter(arr, cb) {
     var newArr = []
     for (var i = 0; i < arr.length; i++) {
-        // if (arr[i] % 2 == 0) {
-        if (cb(arr[i], i, arr)) {
+        // if (arr[i] % 2 == 0) { // sob same only if er condition ta different. thats why amra condition ta direct na likhe condition er poriborte callback function declare kore dibo...
+        
+        if (cb(arr[i], i, arr)) { // pass arguments in callback function
             newArr.push(arr[i])
         }
     }

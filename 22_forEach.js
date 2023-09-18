@@ -31,7 +31,7 @@ var arr = [1, 2, 3, 4, 5]
 function forEach(arr, cb) {
     for (var i = 0; i < arr.length; i++) {
         // console.log(arr[i])
-        cb(arr[i], i, arr)
+        cb(arr[i], i, arr) // argument pass
     }
 }
 
@@ -52,6 +52,6 @@ console.log(sum)
 
 // example : add 5 in every single element
 forEach(arr, function(value, index, arr) {
-    arr[index] = value + 5
+    arr[index] = value + 5 // muted/re-assign
 })
 console.log(arr)
