@@ -1,8 +1,8 @@
 /************* example 1 : callback function ***************/
 
 function sample(a, b, cb) {
-    var c = a + b
-    var d = a - b
+    var c = a + b // 13
+    var d = a - b // 3
     var result = cb(c, d) // invoke & arguments pass
     return result
 }
@@ -12,13 +12,13 @@ function sum(a, b) {
     return a + b
 }
 
-var result = sample(5, 8, sum)
+var result = sample(8, 5, sum)
 console.log(result)
 
 
 
 /********** sub **********/
-var result2 = sample(5, 8, function(c, d) {
+var result2 = sample(8, 5, function(c, d) {
     return c - d
 })
 console.log(result2)
@@ -26,7 +26,7 @@ console.log(result2)
 
 
 /********** multiplication **********/
-var result3 = sample(5, 8, function(c, d) {
+var result3 = sample(8, 5, function(c, d) {
     return c * d
 })
 console.log(result3)

@@ -1,9 +1,9 @@
-/**** What is pure functions ? *********
+/**** What is pure functions ? ******************
  * 
  * it returns the same result if given the same arguments
  * it doesn't cause any observable side effects
  * 
- * **********************************************/ 
+ * **********************************************/
 
 // pure functions
 function sqr(n) {

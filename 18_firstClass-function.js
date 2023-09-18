@@ -26,6 +26,7 @@ console.log(arr)
 console.log(arr[0](5, 3))
 
 
+// note : javascript e function hocche akta object
 // 3. a function can be stored in an object
 var obj = {
     sum: add 
