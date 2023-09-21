@@ -3,6 +3,8 @@
 function sample(a, b, cb) {
     var c = a + b // 13
     var d = a - b // 3
+
+    // callback() function er implement ta hocche, argument hisebe asha function er moddhe...
     var result = cb(c, d) // invoke & arguments pass
     return result
 }
@@ -13,7 +15,7 @@ function sum(a, b) {
 }
 
 var result = sample(8, 5, sum)
-console.log(result)
+console.log(result) // 16
 
 
 
@@ -21,7 +23,7 @@ console.log(result)
 var result2 = sample(8, 5, function(c, d) {
     return c - d
 })
-console.log(result2)
+console.log(result2) // 10
 
 
 
@@ -29,18 +31,24 @@ console.log(result2)
 var result3 = sample(8, 5, function(c, d) {
     return c * d
 })
-console.log(result3)
+console.log(result3) // 39
 
 
 
 
-/*****************************
+/******************************************************************
+ * 
  * function ke variable er moddhe store korte pari
  * function ke array element hisebe arrayr moddhe store korte pari
  * function ke object er moddhe property value hisebe store korte pari
  * 
  * function er moddhe argument hisebe jemon object pass kora jai, thik temon e function er moddhe argument hisebe amra onno akta function pass korte pari & oi main function er moddhe theke argument hisebe pass kora function ke call korte pari aitai hocche callback function.
- *****************************/
+ * 
+ * jei function er maddhome, argument hisebe asha function ke call/invoke kora hoi, aitai hocche callback function.
+ * 
+ * callback() function er implement ta hocche, argument hisebe asha function er moddhe...
+ * 
+ ******************************************************************/
 
 
 

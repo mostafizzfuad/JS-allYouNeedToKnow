@@ -1,4 +1,4 @@
-/************** map() **************
+/************** map() *******************
  * ai function er kaj hocche 1 ta array ke first to last traverse kora.
  * map() method main array ke unchange rekhe, main arrayr element ke niye new akta array generate kore (bivinno condition er upor base kore)
  ***************************************/  
