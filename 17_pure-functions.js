@@ -5,7 +5,7 @@
  * 
  * **********************************************/
 
-// pure functions
+// pure function
 function sqr(n) {
     return n * n
 }
@@ -16,18 +16,18 @@ console.log(sqr(2))
 
 
 
-// doesn't pure functions
+// doesn't pure function
 var n = 10
 function change() {
     n = 100
 }
 change()
 console.log(n) 
-// this function has side effects. because, it chnage the value of n. so it's not a pure functions
+// this function has side effects. because, it chnage the value of n. so it's not a pure function
 
 
 
-// doesn't pure functions
+// doesn't pure function
 var point = {
     x: 45,
     y: 30
@@ -39,4 +39,4 @@ function printPoint(point) {
 }
 printPoint(point)
 console.log(point) 
-// this function has side effects. because, it chnage the value of point object property x & y. so it's not a pure functions
+// this function has side effects. because, it chnage the value of point object property x & y. so it's not a pure function
